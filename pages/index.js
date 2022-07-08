@@ -45,7 +45,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {isReady && (
+        {isReady && startup ? (
           <>
             <h1 className={styles.title}>
               Quel est le budget de<br/>la Startup d’État<br/><a
@@ -84,6 +84,23 @@ export default function Home() {
                 <p>Pourquoi est-ce important de rendre public les ressources des équipes.</p>
               </a>
             </div>
+          </>
+        ) : (
+          <>
+          <h1 className={styles.title}>Transparence financière<br/>des Startups d’État</h1>
+          <div className={styles.content}>
+            <p className={styles.description}>
+              Les équipe de Startup d’État sont incitées à publier leur budget.
+            </p>
+          </div>
+
+          <div className={styles.grid}>
+            <a href="https://beta.gouv.fr/startups/" target="_blank"
+            rel="noopener noreferrer" className={styles.card}>
+              <h2>En savoir plus &rarr;</h2>
+              <p>Accéder à la liste des Startups d’État.</p>
+            </a>
+          </div>
           </>
         )}
       </main>
