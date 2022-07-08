@@ -90,7 +90,7 @@ export default function Home() {
           <h1 className={styles.title}>Transparence financière<br/>des Startups d’État</h1>
           <div className={styles.content}>
             <p className={styles.description}>
-              Les équipe de Startup d’État sont incitées à publier leur budget.
+              Les équipes de Startup d’État sont incitées à publier leur budget.
             </p>
           </div>
 
